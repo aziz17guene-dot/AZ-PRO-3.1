@@ -1,0 +1,253 @@
+================================================================================
+                          NOTICE DE COPYRIGHT
+                            Aziz-Pro v2.0.0
+================================================================================
+
+Copyright © 2024-2026 Abdoul Aziz Guéné
+Tous droits réservés
+
+================================================================================
+PROPRIÉTAIRE
+================================================================================
+
+Nom: Abdoul Aziz Guéné
+Lieu: Ouagadougou, Burkina Faso
+GitHub: https://github.com/aziz17guene
+Email: aziz17guene@github.com
+
+================================================================================
+PROPRIÉTÉ INTELLECTUELLE PROTÉGÉE
+================================================================================
+
+Les éléments suivants sont protégés par copyright:
+
+✓ Code source (JavaScript, React, CSS)
+✓ Architecture et algorithmes
+✓ Interface utilisateur (UI/UX)
+✓ Design et branding
+✓ Logo "Aziz-Pro"
+✓ Documentation et guides
+✓ Ressources (icônes, images)
+✓ Base de données/schémas
+
+================================================================================
+RESTRICTIONS D'UTILISATION
+================================================================================
+
+INTERDIT (sans permission écrite):
+  ✗ Copier le code entièrement
+  ✗ Vendre l'application
+  ✗ Proposer comme service en ligne (SaaS)
+  ✗ Prétendre en être le créateur
+  ✗ Supprimer le copyright
+  ✗ Modifier le branding
+  ✗ Redistribuer commercialement
+  ✗ Reverse-engineer le code
+
+AUTORISÉ (usage personnel):
+  ✓ Utiliser personnellement
+  ✓ Modifier pour usage personnel
+  ✓ Exécuter l'application
+  ✓ Créer des dérivés privés
+  ✓ Contribuer au projet GitHub
+
+================================================================================
+LICENCE
+================================================================================
+
+Licence principale: MIT License
+
+Voir le fichier LICENSE pour:
+- Texte complet de la licence MIT
+- Conditions supplémentaires
+- Clauses de propriété intellectuelle
+- Limitations de responsabilité
+
+================================================================================
+CONDITIONS DE CONFORMITÉ
+================================================================================
+
+Pour utiliser cette application légalement, vous DEVEZ:
+
+1. RESPECTER LE COPYRIGHT
+   → Reconnaître la propriété intellectuelle
+   → Ne pas prétendre être l'auteur
+   → Ne pas modifier les notices
+
+2. INCLURE L'ATTRIBUTION
+   → Créditer: "Powered by Aziz-Pro"
+   → Inclure le lien GitHub
+   → Mentionner le créateur
+
+3. RESPECTER LA LICENCE
+   → Suivre les termes MIT
+   → Respecter les limitations
+   → Inclure ce fichier dans distributions
+
+4. ACCEPTER LES LIMITES
+   → Pas de garantie
+   → Pas de responsabilité illimitée
+   → Utilisation à vos risques
+
+================================================================================
+UTILISATION AUTORISÉE
+================================================================================
+
+✓ PERSONNEL
+  - Usage personnel/privé
+  - Modification personnelle
+  - Expérimentation
+  - Apprentissage
+
+✓ PETITE ENTREPRISE
+  - Entrepreneur individuel
+  - Petits commerces (< 10 emplacements)
+  - Restaurants familiaux
+  - Boutiques indépendantes
+
+✓ ÉDUCATIF
+  - Apprentissage de développement
+  - Éducation
+  - Projets scolaires
+  - Démonstration
+
+✓ CONTRIBUTION
+  - Participation au projet GitHub
+  - Amélioration du code
+  - Bug fixes
+  - Traductions
+
+================================================================================
+UTILISATION NON AUTORISÉE
+================================================================================
+
+✗ COMMERCIAL
+  - Vente directe
+  - Revente sans modification
+  - Service SaaS
+  - Location/subscription
+
+✗ DISTRIBUTION
+  - Partage public sans credit
+  - Redistribution commerciale
+  - Téléchargement sur app stores
+  - Intégration sans permission
+
+✗ MODIFICATION
+  - Suppression du copyright
+  - Modification du branding
+  - Utilisation du nom sans permission
+  - Création de produits concurrents
+
+================================================================================
+MARQUES & BRANDING
+================================================================================
+
+"Aziz-Pro" est une marque protégée.
+
+Interdiction d'utiliser:
+  ✗ Dans des noms de produits
+  ✗ Dans du marketing trompeur
+  ✗ Sans permission écrite
+  ✗ De manière à créer confusion
+
+================================================================================
+DONNÉES UTILISATEUR
+================================================================================
+
+PROPRIÉTÉ DES DONNÉES:
+  → Vos données (produits, ventes, etc.) VOUS appartiennent
+  → Pas de droit de propriété par l'application
+  → Vous pouvez exporter à tout moment
+  → Vous pouvez supprimer à tout moment
+
+CONFIDENTIALITÉ:
+  → Pas de collecte de données
+  → Pas d'envoi à serveur
+  → Pas de partage avec tiers
+  → Stockage local uniquement
+  → Aucune vente de données
+
+RESPONSABILITÉ:
+  → L'app n'est PAS responsable de la perte
+  → Vous devez sauvegarder régulièrement
+  → Vous devez protéger l'accès
+
+================================================================================
+CONTACT & VIOLATIONS
+================================================================================
+
+POUR QUESTIONS LÉGALES:
+  Email: aziz17guene@github.com
+  GitHub: https://github.com/aziz17guene
+  Lieu: Ouagadougou, Burkina Faso
+
+POUR SIGNALER UNE VIOLATION:
+  1. Documenter précisément
+  2. Inclure preuves
+  3. Envoyer à: aziz17guene@github.com
+  4. Délai de réponse: 7 jours
+
+POUR LICENCE COMMERCIALE:
+  Contactez pour négociation
+  Options disponibles:
+  - Licence commerciale
+  - Contrat de support
+  - Développement personnalisé
+
+================================================================================
+AVERTISSEMENT LÉGAL
+================================================================================
+
+Application fournie SANS GARANTIE de quelque sorte.
+Les auteurs ne sont PAS responsables de:
+
+  ✗ Perte de données
+  ✗ Erreurs de calcul
+  ✗ Accès non autorisé
+  ✗ Interruption de service
+  ✗ Dommages directs ou indirects
+  ✗ Violation de lois externes
+
+L'UTILISATION EST À VOS RISQUES ET PÉRILS.
+
+================================================================================
+LOI APPLICABLE
+================================================================================
+
+Juridiction: Burkina Faso
+Tribunal compétent: Ouagadougou
+Loi applicable: Lois du Burkina Faso
+
+En cas de conflit: Lois burkinabé
+
+================================================================================
+HISTORIQUE
+================================================================================
+
+Version 1.0 - 6 Juin 2026
+  → Notice initiale de copyright
+  → Conditions d'utilisation fixées
+  → Propriété intellectuelle déclarée
+
+================================================================================
+
+CONFORMITÉ:
+
+En utilisant cette application, vous confirmez:
+
+  ✓ Avoir lu cette notice
+  ✓ Comprendre les restrictions
+  ✓ Accepter les termes
+  ✓ Respecter le copyright
+  ✓ Honorer l'attribution
+
+Si vous n'acceptez pas: CESSEZ L'UTILISATION IMMÉDIATEMENT
+
+================================================================================
+
+© 2024-2026 Abdoul Aziz Guéné - Tous droits réservés
+Document protégé par copyright - Reproduction interdite
+
+Last Updated: June 6, 2026
+Status: ACTIVE & BINDING
