@@ -861,7 +861,7 @@ En utilisant cette application, vous acceptez:
                         {effectiveView === 'activities' && <ActivityLogs activities={visibleActivities} logs={isEmployee ? logs.filter(l => l.sellerName === currentUser.name) : logs} onPrint={setGlobalReceipt} showSeller={!isEmployee} />}
                         {effectiveView === 'audit' && canSeeView('audit') && <AuditView audit={audit} />}
                         {effectiveView === 'employees' && canSeeView('employees') && <Employees users={users} setUsers={setUsers} sales={sales} currentUser={currentUser} />}
-                        {effectiveView === 'settings' && canSeeView('settings') && <Settings storage={storage} products={products} sales={sales} expenses={expenses} shop={shop} setShop={setShop} shops={shops} setShops={setShops} logs={logs} activities={activities} suppliers={suppliers} purchases={purchases} customers={customers} audit={audit} logout={logout} currentUser={currentUser} />}
+                        {effectiveView === 'settings' && canSeeView('settings') && <Settings storage={storage} products={products} sales={sales} expenses={expenses} shop={shop} setShop={setShop} shops={shops} setShops={setShops} logs={logs} activities={activities} suppliers={suppliers} purchases={purchases} customers={customers} audit={audit} logout={logout} currentUser={currentUser} logAudit={logAudit} setProducts={setProducts} />}
                         {effectiveView === 'about' && <AboutView />}
                     </main>
 
@@ -887,18 +887,12 @@ En utilisant cette application, vous acceptez:
             window.speechSynthesis.speak(utterance);
         };
 
-        // Déclencher alerte vocale si stock bas
-        useEffect(() => {
-            const low = products.filter(p => p.stock <= (p.minStock || 5));
-            if (low.length > 0) {
-                const topCritical = low.slice(0, 3).map(p => p.name).join(', ');
-                const message = `Alerte! Stock bas: ${topCritical}. ${low.length > 3 ? `et ${low.length - 3} autres produits` : ''}`;
-                playVoiceAlert(message);
-            }
-        }, [products]); // Déclencher à chaque changement de produits
+        // Alerte vocale déplacée dans App ou supprimée du scope global car invalide ici.
+        // Pour garder l'app intacte, nous définissons les helpers de prévision sans hooks.
+
 
         // === PRÉVISIONS ET TENDANCES ===
-        const getPredictions = () => {
+        const getPredictions = (sales) => {
             // Calculs sur les 4 dernières semaines
             const now = new Date();
             const weeksData = [];
@@ -942,8 +936,8 @@ En utilisant cette application, vous acceptez:
         };
 
         // === RECOMMANDATIONS D'ÉVOLUTION ===
-        const getGrowthRecommendations = () => {
-            const { trend, avgRevenue } = getPredictions();
+        const getGrowthRecommendations = (products, sales, expenses) => {
+            const { trend, avgRevenue } = getPredictions(sales);
             const totalProfit = sales.reduce((s, x) => s + x.profit, 0);
             const avgTicket = sales.length > 0 ? sales.reduce((s, x) => s + x.total, 0) / sales.length : 0;
             const profitMargin = sales.reduce((s, x) => s + x.total, 0) > 0 ? (totalProfit / sales.reduce((s, x) => s + x.total, 0)) : 0;
@@ -2367,7 +2361,7 @@ En utilisant cette application, vous acceptez:
 
             const lowStockProducts = products.filter(p => {
                 const minStock = p.minStock || 5;
-                return p.qty <= minStock && p.qty > 0;
+                return p.stock <= minStock && p.stock > 0;
             });
 
             // Déclencher alerte si stock bas
@@ -2812,7 +2806,7 @@ En utilisant cette application, vous acceptez:
                         </div>
                     </div>
 
-                    <div className="bg-white rounded-[40px] border border-slate-100 shadow-sm p-8">
+                    {period === 'week' && (
                         <div className="bg-white rounded-[40px] border border-slate-100 shadow-sm p-8">
                             <h3 className="text-sm font-black uppercase tracking-widest text-slate-800 mb-6 flex items-center gap-2">
                                 <Icon name="calendar" className="text-blue-500" /> Détail par Jour de la Semaine
@@ -3191,7 +3185,7 @@ En utilisant cette application, vous acceptez:
             );
         }
 
-        
+        function Settings({ storage, products, sales, expenses, shop, setShop, shops, setShops, logs, activities, suppliers, purchases, customers, audit, logout, currentUser, logAudit, setProducts }) {
             const exportExcel = () => {
                 if (!window.XLSX) return alert("Module Excel en cours de chargement, réessayez.");
                 const wb = window.XLSX.utils.book_new();
@@ -3328,7 +3322,7 @@ En utilisant cette application, vous acceptez:
                                             
                                             // Ajouter les produits SANS remplacer
                                             setProducts(prev => [...prev, ...newProds]);
-                                            logAudit('IMPORT', `${count} produits importés`);
+                                            if (typeof logAudit === 'function') logAudit('IMPORT', `${count} produits importés`);
                                             alert(`✅ ${count} produits importés avec succès!`);
                                         } catch (err) { 
                                             console.error(err);
